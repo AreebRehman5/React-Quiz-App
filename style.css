@@ -1,0 +1,125 @@
+/* quiz.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('modern-simple-abstract-red-black-contrast-background-vector-abstract-graphic-design-banner-pattern-background-web-template_181182-17435.avif'); /* Replace with your Halloween-themed background image */
+    background-size: cover;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+h1 {
+    font-size: 36px;
+    color: #ff0000; /* Orange color for the heading */
+    text-shadow: 2px 2px 4px #000;
+    margin-bottom: 20px;
+}
+
+#quizContainer {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border: 1px solid #ff0000; /* Orange border */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 10px 10px #ff0000;
+}
+
+.quiz-question {
+    font-size: 26px;
+    color: #ff0000; /* Orange color for questions */
+    margin-bottom: 10px;
+}
+
+.quiz-option {
+    margin: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: #222; /* Dark background for options */
+    border: 1px solid #ff0000; /* Orange border for options */
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 2px 2px 4px #000;
+}
+
+.quiz-option:hover {
+    background-color: #ff0000; /* Orange on hover */
+    color: #000;
+}
+
+.quiz-option input[type="radio"] {
+    display: none;
+}
+
+.quiz-option label {
+    display: block;
+    padding: 10px;
+    background-color: #ff0000; /* Orange background for labels */
+    border: 1px solid #ff0000; /* Orange border for labels */
+    color: #222;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.quiz-option label:hover {
+    background-color: #222;
+    color: #ff0000; /* Orange on hover */
+}
+
+.quiz-option input[type="radio"]:checked + label {
+    background-color: #ff9090; /* Blue for selected answers */
+    color: #fff;
+    transform: scale(1.05);
+    transition: transform 0.6s;
+}
+
+#next-btn {
+    background-color: #ff0000; /* Orange button background */
+    color: #000;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+#next-btn:disabled {
+    background-color: #ccc;
+    color: black;
+    cursor: not-allowed;
+}
+
+#next-btn:hover {
+    background-color: #ff3300; /* Darker orange on hover */
+    color: #fff;
+}
+
+/* Style for the countdown timer */
+#timer {
+    font-size: 48px;
+    font-weight: bold;
+    color: #ff0000; /* Orange for the timer */
+    margin: 20px 0;
+    text-shadow: 2px 2px 4px #000;
+}
+
+#questionCount {
+    font-size: 20px;
+    color: #ff0000; /* Orange for the question count */
+    font-weight: 900;
+   margin-bottom: 10px;
+}
+
+#resultContainer{
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border: 1px solid #ff0000; /* Orange border */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 10px 10px #ff0000;
+}
